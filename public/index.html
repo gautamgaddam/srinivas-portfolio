@@ -1,89 +1,627 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8">
+    <meta name="description" content="CV Resume Portfolio Template">
+    <meta name="keywords" content="CV, Resume, Portfolio, Personal, Creative, Html Template, Portfolio Template">
+    <meta name="author" content="Srinivas Gaddam">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.12.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.12.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/10.12.2/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- Title -->
+    <title>Srinivas Gaddam</title>
+    <!-- Favicon -->
+    <link href="img/favicon.png" type="image/png" rel="icon">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- All CSS -->
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body" data-spy="scroll" data-target="#menu-list">
+
+	<!--  start page loader  -->
+	<div id="preloader">
+		<div class="scroll-static"></div>
+	</div>
+	<!--  end page loader  -->
+
+    <!-- begin of main-wrapper -->
+    <div class="main-wrapper">
+		<!-- begin of navbar -->
+		<div class="nav-bar">
+			<!-- begin of scroll-indicator -->
+			<div class="scroll-indicator"></div>
+			<nav>
+				<ul id="menu-list">
+					<li class="nav-item"><a class="active nav-link" href="#body" data-text="Home">
+					Home
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about" data-text="About">
+						About
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#services" data-text="Services">
+						Services
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#skills" data-text="Skills">
+						Skills
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#education" data-text="Education">
+						Education
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#experience" data-text="Experience">
+						Experience
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#works" data-text="Projects">
+						Projects
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#clients" data-text="Clients">
+						Clients
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#blogs" data-text="Blogs">
+						Blogs
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact" data-text="Contact">
+						Contact
+					</a></li>
+				</ul>
+			</nav>
+			<div class="nav-footer">
+				<p class="nav-copyright">&copy; Copyright <span class="year"></span>
+					<br>All rights reserved</p>
+			</div>
+		</div>
+		<!-- end of navbar -->
+		<!-- begin of main-content -->
+		<div class="main-content">
+			<!-- begin of header -->
+			<header>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-7">
+							<!-- logo -->
+							<div class="logo">
+								<a href="index-2.html">Srinivas Gaddam</a>
+							</div>
+						</div>
+						<div class="col-5">
+							<a href="#"  target="_blank" class="default-btn header-action-btn"><i class="ti-agenda"></i> Download CV</a>
+							<div class="default-btn menu-btn">
+								<i class="ti-menu"></i>
+								<i class="ti-close"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end of header -->
+
+			<!-- begin of home-wrapper -->
+			<div class="home-wrapper">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-5 col-sm-5">
+							<div class="hero-img wow fadeIn" data-wow-delay=".2s">
+								<div class="shape"></div>
+								<!-- hero image -->
+								<img class="img-fluid" src="img/profile.jpeg" alt="">
+							</div>
+						</div>
+						<div class="col-md-7 col-sm-7">
+							<div class="hero-content">
+								<h2 class="intro-name">
+									<span class="wow slideInLeft">Hey, I am</span>
+									<span class="wow slideInLeft" data-wow-delay=".2s">Srinivas Gaddam</span>
+								</h2>
+								<p>
+									<span class="wow slideInLeft" data-wow-delay=".5s">Front-end Web Developer. Based in Stockholm, Sweden.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of home-wrapper -->
+
+			<!-- begin of about-wrapper -->
+			<div id="about" class="wrapper about-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">About Me</h3>
+
+							<h4 class="about-sub-heading">My name is Srinivas. I am a Front-end Web Developer and lives in Stockholm.</h4>
+							<p class="about-text">Creative I use creative approach to problem solve and always coming up with innovative ideas.</p>
+							<a href="#" target="_blank" class="default-btn"><i class="ti-agenda"></i> Download CV</a>
+
+							<!-- social profile links -->
+							<div class="social-links">
+								<span>I am avilable on</span>
+								<ul>
+									<li><a href="#" data-text="tw"><i class="ti-twitter"></i></a></li>
+									<li><a href="#" data-text="ig"><i class="ti-instagram"></i></a></li>
+									<li><a href="#" data-text="in"><i class="ti-linkedin"></i></a></li>
+									<li><a href="#" data-text="fa"><i class="ti-facebook"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of about-wrapper -->
+
+			<!-- begin of service-wrapper -->
+			<div id="services" class="wrapper service-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">Services</h3>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<!-- service item -->
+							<div class="service-item">
+								<span class="ti-ruler-pencil"></span>
+								<h4>UI/UX Design</h4>
+								<p>Optio perspiciatis sequi voluptatem busposs debitis dolori provident imus.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<!-- service item -->
+							<div class="service-item">
+								<span class="ti-bar-chart-alt"></span>
+								<h4>Branding</h4>
+								<p>Provi perspiciatis sequi voluptatem busposs debitis dolori provident imus!</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<!-- service item -->
+							<div class="service-item">
+								<span class="ti-hummer"></span>
+								<h4>Testing</h4>
+								<p>Optio perspiciatis sequi voluptatem busposs debitis dolori provident imus.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<!-- service item -->
+							<div class="service-item">
+								<span class="ti-thumb-up"></span>
+								<h4>Support</h4>
+								<p>Provi perspiciatis sequi voluptatem busposs debitis dolori provident imus!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of service-wrapper -->
+
+			<!-- begin of skills-wrapper -->
+			<div id="skills" class="wrapper skills-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 margin-on-md">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">Technical Skills</h3>
+
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>React, Hooks</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" style="width:93%"></div>
+								</div>
+							</div>
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>Redux</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" data-wow-delay=".1s" style="width:76%"></div>
+								</div>
+							</div>
+							<div class="skill-item">
+								<p>Ant Design, Material Design</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" data-wow-delay=".1s" style="width:76%"></div>
+								</div>
+							</div>
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>Version Control/Git</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" data-wow-delay=".2s" style="width:88%"></div>
+								</div>
+							</div>
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>Github/Bitbucket</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" data-wow-delay=".3s" style="width:99%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">Other Skills</h3>
+
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>HTML5 &amp; CSS3</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" style="width:90%"></div>
+								</div>
+							</div>
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>SCSS/SASS</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" data-wow-delay=".1s" style="width:78%"></div>
+								</div>
+							</div>
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>JavaScript</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" data-wow-delay=".2s" style="width:67%"></div>
+								</div>
+							</div>
+							<!-- skill item -->
+							<div class="skill-item">
+								<p>jQuery</p>
+								<div class="skill-wrap">
+									<div class="skill-percent wow slideInLeft" data-wow-delay=".3s" style="width:77%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of skills-wrapper -->
+
+			<!-- begin of education-wrapper -->
+			<div id="education" class="wrapper education-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">Education</h3>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="education-single">
+								<h4 class="course-name">Master's in Signal Processing</h4>
+								<p class="institute">Blekinge Tekniska Högskola</p>
+								<p class="mute-text">Session : 2015-2017</p>
+								<p class="mute-text">Passing Year : September 2017</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6">
+							<div class="education-single">
+								<h4 class="course-name">Bachelor's in Electronics</h4>
+								<p class="institute">Jawaharlal Nehru Technological University University</p>
+								<p class="mute-text">Session : 2011-2014</p>
+								<p class="mute-text">Passing Year : June 2014</p>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of education-wrapper -->
+
+			<!-- begin of experience-wrapper -->
+			<div id="experience" class="wrapper experience-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">Experience</h3>
+						</div>
+						<div class="col-md-6">
+							<div class="experience-single">
+								<h4 class="company">Alex-Studio</h4>
+								<p class="position-name">Front-end Web Developer</p>
+								<p class="mute-text">October 2016 - Present</p>
+								<p class="company-info">Amet corrupti possimus debitis nisi nam quae quod quidem magnam aliquam adipisci recusandae earum inventore totam delects voluptatem?</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="experience-single">
+								<h4 class="company">Navida IT</h4>
+								<p class="position-name">Senior Ui/Ux Designer</p>
+								<p class="mute-text">January 2014 - September 2016</p>
+								<p class="company-info">Quod corrupti possimus debitis nisi nam quae quod quidem magnam aliquam adipisci recusandae earum inventore totam delects voluptatem!</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="experience-single">
+								<h4 class="company">Revulation-IT</h4>
+								<p class="position-name">Front-end Web Developer</p>
+								<p class="mute-text">October 2016 - Present</p>
+								<p class="company-info">Amet corrupti possimus debitis nisi nam quae quod quidem magnam aliquam adipisci recusandae earum inventore totam delects voluptatem?</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="experience-single">
+								<h4 class="company">Creative Labs</h4>
+								<p class="position-name">Senior Ui/Ux Designer</p>
+								<p class="mute-text">January 2014 - September 2016</p>
+								<p class="company-info">Quod corrupti possimus debitis nisi nam quae quod quidem magnam aliquam adipisci recusandae earum inventore totam delects voluptatem!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of experience-wrapper -->
+
+			<!-- begin of works-wrapper -->
+			<div id="works" class="wrapper works-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">Recent Works</h3>
+						</div>
+						<div class="col-md-12">
+							<!-- work filter buttons -->
+							<div class="filter-buttons">
+								<button class="active" data-filter="*">Everything</button>
+								<button data-filter=".web">Web</button>
+								<button data-filter=".uiux">UI/UX</button>
+								<button data-filter=".branding">Branding</button>
+							</div>
+						</div>
+					</div>
+					<div class="row zoom-gallery">
+						<!-- work single item  -->
+						<div class="col-lg-4 col-md-6 col-sm-6 uiux">
+							<div class="work-single-item">
+								<a class="zoom-image" href="img/work-01.jpg">
+									<div class="tilt-wrap">
+										<img class="img-fluid" src="img/work-01.jpg" alt="">
+										<h6>Gold Left Palm</h6>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- work single item  -->
+						<div class="col-lg-4 col-md-6 col-sm-6 web">
+							<div class="work-single-item">
+								<a class="zoom-image" href="img/work-02.jpg">
+									<div class="tilt-wrap">
+										<img class="img-fluid" src="img/work-02.jpg" alt="">
+										<h6>Shuvashini</h6>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- work single item  -->
+						<div class="col-lg-4 col-md-6 col-sm-6 branding">
+							<div class="work-single-item">
+								<a class="zoom-image" href="img/work-03.jpg">
+									<div class="tilt-wrap">
+										<img class="img-fluid" src="img/work-03.jpg" alt="">
+										<h6>Duck in Gold</h6>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- work single item  -->
+						<div class="col-lg-4 col-md-6 col-sm-6 web">
+							<div class="work-single-item">
+								<a class="zoom-image" href="img/work-04.jpg">
+									<div class="tilt-wrap">
+										<img class="img-fluid" src="img/work-04.jpg" alt="">
+										<h6>Black Body Paint</h6>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- work single item  -->
+						<div class="col-lg-4 col-md-6 col-sm-6 branding">
+							<div class="work-single-item">
+								<a class="zoom-image" href="img/work-05.jpg">
+									<div class="tilt-wrap">
+										<img class="img-fluid" src="img/work-05.jpg" alt="">
+										<h6>Work Harder</h6>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- work single item  -->
+						<div class="col-lg-4 col-md-6 col-sm-6 uiux">
+							<div class="work-single-item">
+								<a class="zoom-image" href="img/work-06.jpg">
+									<div class="tilt-wrap">
+										<img class="img-fluid" src="img/work-06.jpg" alt="">
+										<h6>Brown Water</h6>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- view all work button  -->
+						<div class="col-lg-12 text-center">
+							<a href="#" class="default-btn all-work-btn">View All Works</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of works-wrapper -->
+
+			<!-- begin of clients-wrapper -->
+			<!-- <div id="clients" class="wrapper clients-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- section heading -->
+							<!-- <h3 class="wrapper-heading">Clients</h3>
+						</div>
+						<div class="col-md-12">
+							<div class="owl-carousel clients-carousel">
+								<div class="client-img" data-text="themeforest"><img src="img/brand/brand_01.png" alt="Brand_01"></div>
+								<div class="client-img" data-text="videohive"><img src="img/brand/brand_02.png" alt="Brand_02"></div>
+								<div class="client-img" data-text="codecanyon"><img src="img/brand/brand_03.png" alt="Brand_03"></div>
+								<div class="client-img" data-text="augiojungle"><img src="img/brand/brand_04.png" alt="Brand_04"></div>
+								<div class="client-img" data-text="graphicriver"><img src="img/brand/brand_05.png" alt="Brand_05"></div>
+								<div class="client-img" data-text="photodune"><img src="img/brand/brand_06.png" alt="Brand_06"></div>
+								<div class="client-img" data-text="3docean"><img src="img/brand/brand_07.png" alt="Brand_07"></div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			<!-- </div> -->
+			<!-- end of clients-wrapper -->
+
+			<!-- begin of blogs-wrapper -->
+			<div id="blogs" class="wrapper blogs-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<!-- section heading -->
+							<h3 class="wrapper-heading">Blogs</h3>
+						</div>
+						<div class="owl-carousel clients-carousel ">
+						<div class="">
+							<div class="blog-item">
+								<a href="#">
+									<div class="blog-img">
+										<img class="img-fluid" src="img/work-07.png" alt="">
+									</div>
+									<div class="blog-info">
+										<div class="tags">
+											<span>#Design</span>
+											<span>#UI</span>
+										</div>
+										<h4 class="blog-title">
+											<span>Saepe fuga optio est mollitia architecto magni atque voluptate conama.</span>
+										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="">
+							<div class="blog-item">
+								<a href="#">
+									<div class="blog-img">
+										<img class="img-fluid" src="img/work-08.png" alt="">
+									</div>
+									<div class="blog-info">
+										<div class="tags">
+											<span>#UI</span>
+											<span>#UX</span>
+										</div>
+										<h4 class="blog-title">
+											<span>Alias fuga optio est mollitia architecto magni atque voluptate conama.</span>
+										</h4>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- <div class="">
+							<div class="blog-item">
+								<a href="#">
+									<div class="blog-img">
+										<img class="img-fluid" src="img/blog-img-03.jpg" alt="">
+									</div>
+									<div class="blog-info">
+										<div class="tags">
+											<span>#Develop</span>
+										</div>
+										<h4 class="blog-title">
+											<span>Quiape fuga optio est mollitia architecto magni atque voluptate conama!</span>
+										</h4>
+									</div>
+								</a>
+							</div>
+						</div> -->
+					</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of blogs-wrapper -->
+
+			<!-- begin of contact-wrapper -->
+			<div id="contact" class="wrapper contact-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-5 col-md-12">
+							<div class="contact-details">
+								<h4>Get in Touch</h4>
+								<p>Excepturi nemo Labore veritatis error consequatur blanditiis quae id distinctio impedit culpa.</p>
+							</div>
+							<div class="contact-info">
+								<p><span class="ti-email"></span>someone@email.com</p>
+								<p><span class="ti-mobile"></span>+0 215 112 11</p>
+								<p><span class="ti-home"></span>121 Street Hen, Suhen, NewYork</p>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-12">
+							<form id="contact-form" action="">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="form-message"></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <!-- input field for NAME -->
+                                        <input class="input_field required" type="text" name="name" placeholder="Name">
+                                        <!-- input field for EMAIL -->
+                                        <input class="input_field required" type="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <!-- input field for MESSAGE -->
+                                        <textarea class="input_field required" name="message" placeholder="Tell Me About Your Query."></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- button for MESSAGE-SEND -->
+                                        <button class="default-btn w-100" type="submit">Send Message</button>
+                                    </div>
+                                    
+	                                <div class="col-12">
+	                                    <br><small><b>NOTE:</b> Don't worry about showing any contact form error in demo version,<br> it works properly in downloadable version.</small>
+	                                </div>
+                                </div>
+                            </form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end of contact-wrapper -->
+
+			<!-- begin of contact-wrapper -->
+			<footer class="wrapper footer-wrapper">
+				<div class="container-fluid">
+					<div class="col-md-12 text-center">
+						<div class="footer-social">
+							<a href="#" target="_blank">Twitter</a>
+							<a href="#" target="_blank">Instagram</a>
+							<a href="#" target="_blank">Linkedin</a>
+							<a href="#" target="_blank">Facebook</a>
+							<a href="#" target="_blank">Dribbble</a>
+						</div>
+						<p class="footer-copyright">© Copyright <span class="year"></span> </p>
+					</div>
+				</div>
+			</footer>
+			<!-- end of contact-wrapper -->
+
+			<!-- scroll-to top -->
+			<a class="default-btn scroll-to-top" href="#body"><span class="ti-angle-up "></span></a>
+
+		</div>
+		<!-- end of main-content -->
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- end of main-wrapper -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- All JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ajax-mail.js"></script>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+</body>
+
+
 </html>
